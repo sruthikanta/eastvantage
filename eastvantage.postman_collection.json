@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "4b4cdbef-e9c8-4886-a0e3-f8d5127e9817",
+		"name": "eastvantage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34420985"
+	},
+	"item": [
+		{
+			"name": "retrive_address",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address_id\":1003,\r\n    \"address\": \"5902 Richmond Highway\",\r\n    \"city\": \"Alexandria\",\r\n    \"state\": \"VA\",\r\n    \"zipcode\": 22303,\r\n    \"country\": \"USA\",\r\n    \"phone_number\": \"7033298600\",\r\n    \"latitude\": 38.7925101000,\r\n    \"longitude\": -77.0594146000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_address",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address_id\":1003,\r\n    \"address\": \"5903 Richmond Highway\",\r\n    \"city\": \"Alexandria\",\r\n    \"state\": \"VA\",\r\n    \"zipcode\": 22303,\r\n    \"country\": \"USA\",\r\n    \"phone_number\": \"7033298600\",\r\n    \"latitude\": 38.7925101000,\r\n    \"longitude\": -77.0594146000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_address",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
